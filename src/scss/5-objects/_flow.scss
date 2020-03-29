@@ -1,0 +1,16 @@
+.o-flow {
+
+    &.-small > * + * {
+        margin-top: spacing(0);
+    }
+    
+    & > * + *,
+    &.-medium > * + * {
+        margin-top: spacing(2);
+    }
+    
+    &.-large > * + * {
+        margin-top: spacing(5);
+    }
+
+}

@@ -1,0 +1,29 @@
+html {
+
+}
+
+body {
+    @include text-size(0);
+    font-family: $--font-family--paragraph;
+    font-weight: 400;
+    color: color('neutral', 9);
+    background-color: color('neutral', 0);
+}
+
+em, i {
+    font-style: italic;
+}
+
+strong, b {
+    font-weight: 700;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+	cursor: pointer;
+}

@@ -1,0 +1,19 @@
+.o-gutter {
+    
+    &,
+    &.-left {
+        padding-left: spacing(0);
+        @include breakpoint('m'){
+            padding-left: spacing(2);
+        }
+    }
+
+    &,
+    &.-left {
+        padding-right: spacing(0);
+        @include breakpoint('m'){
+            padding-right: spacing(2);
+        }
+    }
+    
+}

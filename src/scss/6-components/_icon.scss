@@ -1,0 +1,23 @@
+.c-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+    stroke: currentColor;
+
+    &.-small {
+        height: 16px;
+        width: 16px;
+    }
+
+    &.-large {
+        width: 32px;
+        height: 32px;
+    }
+
+    &.-xlarge {
+        width: 40px;
+        height: 40px;
+    }
+    
+}

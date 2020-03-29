@@ -1,0 +1,18 @@
+@mixin text-size($key){
+    @if( map-has-key($--text-sizes, inspect($key)) ){
+        font-size: nth(map-get($--text-sizes, inspect($key)), 1);
+        line-height: nth(map-get($--text-sizes, inspect($key)), 2);
+    }
+}
+
+@function text-size($key){
+    @if( map-has-key($--text-sizes, inspect($key)) ){
+        @return nth(map-get($--text-sizes, inspect($key)), 1);
+    }
+}
+
+@function line-height($key){
+    @if( map-has-key($--text-sizes, inspect($key)) ){
+        @return nth(map-get($--text-sizes, inspect($key)), 2);
+    }
+}

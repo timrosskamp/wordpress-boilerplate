@@ -1,0 +1,5 @@
+@function z-depth($key){
+    @if( map-has-key($--z-depth, inspect($key)) ){
+        @return map-get($--z-depth, inspect($key));
+    }
+}

@@ -1,0 +1,12 @@
+@function color($set, $key: null){
+    @if( map-has-key($--colors, inspect($set)) ){
+        $colorPalette: map-get($--colors, inspect($set));
+
+        @if( type-of($colorPalette) == color ){
+            @return $colorPalette;
+        }
+        @else if( map-has-key($colorPalette, inspect($key)) ){
+            @return map-get($colorPalette, inspect($key));
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.u-text {
+
+    &.-display {
+        font-family: $--font-family--display;
+    }
+
+    &.-uppercase {
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+
+    &.-center {
+        text-align: center;
+    }
+
+    &.-primary {
+        color: color('primary', 5);
+    }
+
+    &.-light {
+        color: color('neutral', 5);
+    }
+
+}

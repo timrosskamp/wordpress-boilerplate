@@ -1,0 +1,5 @@
+@function spacing($key){
+    @if( map-has-key($--spacing, inspect($key)) ){
+        @return map-get($--spacing, inspect($key));
+    }
+}

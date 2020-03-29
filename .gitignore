@@ -1,3 +1,4 @@
 .docker-cache/
 vendor/
 node_modules/
+dist/

@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "dev": "concurrently \"rollup -c -w\""
+        "dev": "concurrently -n JS,CSS \"rollup -c -w\" \"gulp\""
     },
     "devDependencies": {
         "@rollup/plugin-buble": "^0.21.1",

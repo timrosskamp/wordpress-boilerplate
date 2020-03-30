@@ -20,20 +20,22 @@ gulp.task('sass', done => {
 		gulp.dest('dist/', {
 			sourcemaps: '.'
 		})
-	], () => {
-		pump([
-			gulp.src(['dist/style.css']),
-			postcss([
-				cssnano()
-			]),
-			rename({
-				extname: '.min.css'
-			}),
-			gulp.dest('dist/')
-		], done)
-	})
+	], done)
 })
 
-gulp.task('default', gulp.series('sass', () => {
-	gulp.watch(['src/scss/**'], gulp.series('sass'))
+gulp.task('sassmin', done => {
+	pump([
+		gulp.src(['dist/style.css']),
+		postcss([
+			cssnano()
+		]),
+		rename({
+			extname: '.min.css'
+		}),
+		gulp.dest('dist/')
+	], done)
+})
+
+gulp.task('default', gulp.series('sass', 'sassmin', () => {
+	gulp.watch(['src/scss/**'], gulp.series('sass', 'sassmin'))
 }))

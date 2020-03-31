@@ -17,8 +17,20 @@ export default [{
         ]
     }],
     plugins: [
+        buble(),
         resolve(),
-        commonjs(),
-        buble()
+        commonjs()
+    ]
+}, {
+    input: 'src/blocks/blocks.js',
+    output: {
+        file: 'dist/blocks.js',
+        format: 'iife',
+        sourcemap: true
+    },
+    plugins: [
+        buble(),
+        resolve(),
+        commonjs()
     ]
 }]

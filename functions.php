@@ -129,3 +129,16 @@ add_action('init', function(){
     ]);
 
 });
+
+
+
+
+/* -------------------------------------------------------------------------- *\
+    # BLOCKS
+\* -------------------------------------------------------------------------- */
+
+add_action('enqueue_block_editor_assets', function(){
+
+    wp_enqueue_script('theme-blocks', get_template_directory_uri() . '/dist/blocks.js', ['wp-blocks', 'wp-element'], @filemtime(get_template_directory() . 'dist/blocks.js'));
+
+});

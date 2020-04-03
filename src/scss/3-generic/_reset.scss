@@ -1,22 +1,51 @@
-*,
-*:before,
-*:after {
-	padding: 0;
-	border: 0;
+html,
+body {
+	border: none;
 	margin: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-	color: inherit;
-	box-sizing: border-box;
+	padding: 0;
 }
 
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+address,
+big,
+cite,
+code,
+em,
+font,
+img,
+small,
+strike,
+sub,
+sup,
+li,
+ol,
+ul,
+fieldset,
+form,
+label,
+legend,
+button,
+table,
+caption,
+tr,
+th,
+td {
+	border: none;
+	font-size: inherit;
+	line-height: inherit;
+	margin: 0;
+	padding: 0;
+	text-align: inherit;
 }
 
-button {
-	background: transparent;
-	cursor: pointer;
+blockquote::before,
+blockquote::after {
+	content: "";
 }

@@ -1,15 +1,15 @@
 .o-flow {
 
-    &.-small > * + * {
+    &--small > * + * {
         margin-top: spacing(0);
     }
     
     & > * + *,
-    &.-medium > * + * {
+    &--medium > * + * {
         margin-top: spacing(2);
     }
     
-    &.-large > * + * {
+    &--large > * + * {
         margin-top: spacing(5);
     }
 

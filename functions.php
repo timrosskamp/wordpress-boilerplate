@@ -130,6 +130,15 @@ add_action('init', function(){
 
 });
 
+add_filter('timber/context', function($context){
+
+    $context['menus'] = [
+        'main' => new \Timber\Menu('main')
+    ];
+
+    return $context;
+});
+
 
 
 

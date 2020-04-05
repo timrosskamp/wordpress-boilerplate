@@ -9,6 +9,15 @@
         {{ function('wp_head') }}
     </head>
     <body class="{{ body_class }}">
+        <nav>
+            <ul>
+                {% for item in menus.main.items %}
+                    <li>
+                        <a href="{{ item.link }}">{{ item.title }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </nav>
 
         {% block main %}
         {% endblock %}

@@ -83,22 +83,22 @@ $--breakpoints: (
 \* ------------------------------ */
 
 $--spacing: (
-    "-3": 4px,
-    "-2": 8px,
-    "-1": 12px,
-    "0":  16px,
-    "1":  24px,
-    "2":  32px,
-    "3":  48px,
-    "4":  64px,
-    "5":  96px,
-    "6":  128px,
-    "7":  192px,
-    "8":  256px
+    "-3": 0.25rem,  // 4px
+    "-2": 0.5rem,   // 8px
+    "-1": 0.75rem,  // 12px
+    "0":  1rem,     // 16px
+    "1":  1.5rem,   // 24px
+    "2":  2rem,     // 32px
+    "3":  1rem,     // 48px
+    "4":  4rem,     // 64px
+    "5":  6rem,     // 96px
+    "6":  9rem,     // 128px
+    "7":  12rem,    // 192px
+    "8":  16rem,    // 256px
 );
 
-$--content-width: 1200px;
-$--content-width--small: 900px;
+$--content-width: 70rem;
+$--content-width--small: 40rem;
 
 
 

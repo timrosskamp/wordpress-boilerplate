@@ -13,7 +13,7 @@
         background-color: color('primary', 7);
     }
 
-    &.-large {
+    &--large {
         padding: spacing(0) spacing(4);
         @include text-size(1);
     }

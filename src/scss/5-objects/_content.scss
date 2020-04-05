@@ -1,0 +1,50 @@
+/**
+ * Wraps "the_content"
+ */
+.o-content {
+    $gap: spacing(0);
+
+    padding-left: $gap;
+    padding-right: $gap;
+
+    & > * {
+        max-width: $--content-width--small;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    & > .alignwide {
+        max-width: $--content-width;
+    }
+
+    & > .alignfull {
+        max-width: none;
+        margin-left: ($gap * -1);
+        margin-right: ($gap * -1);
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        margin-top: 1em;
+    }
+
+    p, ul, ol {
+        margin-top: spacing(1);
+    }
+
+    ul ol,
+    ul ul,
+    ol ol,
+    ol ul {
+        margin-top: 0;
+        margin-bottom: spacing(-3);
+    }
+
+    ul {
+        padding-left: 1.5em;
+    }
+
+    .wp-block-image {
+        margin-top: spacing(1);
+    }
+
+}
